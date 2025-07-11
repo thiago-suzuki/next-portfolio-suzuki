@@ -1,0 +1,24 @@
+{
+    "Pages": {
+        "Global": {
+            "Header": {
+                "Options": {
+                    "home": "Home",
+                    "about": "About me",
+                    "experience": "Experiences",
+                    "projects": "Projects",
+                    "contact": "Contact",
+                    "languages": {
+                        "en": "English",
+                        "es": "Spanish",
+                        "pt-br": "Portuguese"
+                    }
+                }  
+            },
+            "Content": {
+                "hello": "Hi, I am",
+                "work": "Full Stack Developer"
+            }
+        }
+    }
+}
