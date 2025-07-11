@@ -70,7 +70,7 @@ export function About() {
                             {/* Figma */}
                             <div className="flex flex-col items-center">
                                 <div className="relative w-24 h-24">
-                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
+                                    <div className="w-24 h-48 rounded-full border-4 border-primary-500"></div>
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <span className="text-2xl">ƒƒ</span>
                                     </div>
@@ -117,6 +117,104 @@ export function About() {
                                 <p className="text-gray-400">Adobe Illustrator</p>
                             </div>
 
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
+                            {/* Adobe Premiere */}
+                            <div className="flex flex-col items-center">
+                                <div className="relative w-24 h-24">
+                                    <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
+                                    <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-t-transparent border-b-transparent absolute top-0 left-0 transform rotate-[50deg]"></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <span className="text-2xl">Pr</span>
+                                    </div>
+                                </div>
+                                <p className="text-primary-500 text-xl font-bold mt-2">70%</p>
+                                <p className="text-gray-400">Adobe Premiere</p>
+                            </div>
+
+                            
                             {/* Adobe Premiere */}
                             <div className="flex flex-col items-center">
                                 <div className="relative w-24 h-24">

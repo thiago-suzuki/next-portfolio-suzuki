@@ -24,7 +24,7 @@ export function DesktopMenu() {
         { code: "pt-br", label: t('languages.pt-br'), flag: "🇧🇷" },
     ];
 
-    const navbarOptions = ["home",  "about", "experience", "projects", "contact"]
+    const navbarOptions = ["home",  "about", "experience", "projects"]
 
     const handleLocaleChange = (newLocale: string) => {
         const localePattern = localesData.map(l => l.replace('-', '\\-')).join('|');

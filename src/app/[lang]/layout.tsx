@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Navbar } from "@/components";
+import { Navbar, Footer } from "@/components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +37,12 @@ export default async function RootLayout({
     <html lang={lang}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider locale={lang} messages={messages}>
-          <div className="min-h-screen bg-black text-white p-6 sm:p-12">
+          <div className="min-h-screen bg-black text-white">
             <Navbar />
             {children}
+            <br />
+            <br />
+            <Footer />
           </div>
         </NextIntlClientProvider>
       </body>
