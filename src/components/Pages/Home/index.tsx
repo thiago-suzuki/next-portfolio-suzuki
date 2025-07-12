@@ -34,7 +34,7 @@ export function Home() {
                     <p className="text-gray-300">{t('hello')}</p>
                     <h2 className="text-xl font-semibold text-gray-200">Thiago Suzuki</h2>
                     <h1 className="text-4xl sm:text-5xl font-bold ext-2xl text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-500">
-                    {t('work')}
+                        {t('work')}
                     </h1>
                 </div>
 
@@ -82,7 +82,7 @@ export function Home() {
                 <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-[500px] lg:h-[500px]">
                     <div className="absolute inset-0 bg-gray-900 rounded-full"></div>
                         <img
-                            src="https://github.com/thiago-suzuki.png"
+                            src="/images/profile.jpeg"
                             alt="Professional man in black suit"
                             className="absolute inset-0 w-full h-full object-cover object-center rounded-full"
                         />

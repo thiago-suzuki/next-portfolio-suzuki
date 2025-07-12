@@ -15,8 +15,9 @@
         "About": {
             "title": "Sobre mim",
             "subtitle": "Desenvolvedor de Software Full Stack",
-            "paragraphOne": "Formado em Bacharelado de Sistemas de Informação na Universidade Santa Cecília, sou Desenvolvedor de Software Full Stack com mais de 5 anos de experiência. Tenho enorme paixão por resolver problemas complexos, sempre buscando eficiência e inovação. Ao longo da minha trajetória, desenvolvi projetos multifuncionais e otimizei processos críticos, garantindo entregas consistentes com qualidade superior.",
-            "paragraphTwo": "Sempre em busca de desafios que me permitam explorar novas tecnologias, aprender mais sobre as regras de negócio e aprimorar a performance de sistemas em larga escala.",
+             "paragraphOne": "Desenvolvedor de Software Full Stack com mais de 5 anos de experiência, graduado em Sistemas de Informação pela Universidade Santa Cecília. Apaixonado por tecnologia e resolução de problemas complexos, atuo com foco em eficiência, inovação e qualidade em cada entrega.",
+            "paragraphTwo": "Ao longo da minha trajetória, liderei e colaborei em projetos multifuncionais, otimizando processos críticos e garantindo soluções robustas e escaláveis. Tenho facilidade em compreender regras de negócio e transformar desafios técnicos em oportunidades de melhoria contínua.",
+            "paragraphThree": "Estou sempre em busca de novos desafios que envolvam tecnologias emergentes, arquitetura de sistemas e alta performance, contribuindo ativamente para o crescimento de produtos e equipes.",
             "buttons": {
                 "contact":"Contate me",
                 "cv":"Baixar CV"

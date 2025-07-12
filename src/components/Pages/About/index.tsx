@@ -26,7 +26,7 @@ export function About() {
               },
             }}
         >
-            <div className="text-white py-8">
+            <div className="text-white pb-12">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 gap-8">
                         <div className="text-center">
@@ -38,7 +38,7 @@ export function About() {
                             <div className="flex justify-center">
                                 <div className="w-full max-w-md bg-black rounded-lg overflow-hidden">
                                     <img
-                                        src="https://images.unsplash.com/photo-1586528116493-a029325540fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                                        src="/images/about-profile.jpg"
                                         alt="Professional portrait"
                                         className="w-full h-auto"
                                     />
@@ -52,6 +52,10 @@ export function About() {
 
                                 <p className="mb-6 leading-relaxed">
                                     {t('paragraphTwo')}
+                                </p>
+
+                                <p className="mb-6 leading-relaxed">
+                                    {t('paragraphThree')}
                                 </p>
 
                                 <Link href={linkWP} target="_blank">
