@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio - Thiago Suzuki",
+  icons: {
+    icon: "/profile.svg",
+  }
 };
 
 type Params = {
@@ -38,11 +41,11 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider locale={lang} messages={messages}>
           <div className="min-h-screen bg-black text-white">
-            <Navbar />
+            <Navbar key='navbar' />
             {children}
             <br />
             <br />
-            <Footer />
+            <Footer key='footer'/>
           </div>
         </NextIntlClientProvider>
       </body>

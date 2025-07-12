@@ -7,9 +7,10 @@ import { IoChevronDown } from "react-icons/io5";
 import { motion, Variants } from "framer-motion";
 
 import { usePathname, useRouter, locales as localesData, Link } from "@/i18n/routing";
+import { navbarOptions } from "@/data";
 
 export function MobileMenu() {
-    const t = useTranslations("Pages.Global.Header.Options");
+    const t = useTranslations("Components.Navbar.Options");
     
     const router = useRouter();
     const locale = useLocale();
@@ -26,8 +27,6 @@ export function MobileMenu() {
         { code: "es", label: t('languages.es'), flag: "🇪🇸" },
         { code: "pt-br", label: t('languages.pt-br'), flag: "🇧🇷" },
     ];
-
-    const navbarOptions = ["home",  "about", "experience", "projects", "contact"]
 
     const handleLocaleChange = (newLocale: string) => {
         const localePattern = localesData.map(l => l.replace('-', '\\-')).join('|');

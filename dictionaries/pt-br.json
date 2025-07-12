@@ -1,24 +1,42 @@
 {
     "Pages": {
-        "Global": {
-            "Header": {
-                "Options": {
-                    "home": "Home",
-                    "about": "Sobre mim",
-                    "experience": "Experiências",
-                    "projects": "Projetos",
-                    "contact": "Contato",
-                    "languages": {
-                        "en": "Inglês",
-                        "es": "Espanhol",
-                        "pt-br": "Português"
-                    }
-                }  
+        "Home": {
+            "hello": "Olá, eu sou",
+            "work": "Desenvolvedor Full Stack",
+            "metadata": {
+                "experience": "Experiência",
+                "project": "Projetos realizados"
             },
-            "Content": {
-                "hello": "Olá, eu sou",
-                "work": "Desenvolvedor Full Stack"
+            "buttons": {
+                "contact":"Contate me",
+                "cv":"Baixar CV"
             }
+        },
+        "About": {
+            "title": "Sobre mim",
+            "subtitle": "Desenvolvedor de Software Full Stack",
+            "paragraphOne": "Formado em Bacharelado de Sistemas de Informação na Universidade Santa Cecília, sou Desenvolvedor de Software Full Stack com mais de 5 anos de experiência. Tenho enorme paixão por resolver problemas complexos, sempre buscando eficiência e inovação. Ao longo da minha trajetória, desenvolvi projetos multifuncionais e otimizei processos críticos, garantindo entregas consistentes com qualidade superior.",
+            "paragraphTwo": "Sempre em busca de desafios que me permitam explorar novas tecnologias, aprender mais sobre as regras de negócio e aprimorar a performance de sistemas em larga escala.",
+            "buttons": {
+                "contact":"Contate me",
+                "cv":"Baixar CV"
+            }
+        }
+    },
+    "Components": {
+        "Navbar": {
+            "Options": {
+                "home": "Home",
+                "about": "Sobre mim",
+                "experience": "Experiências",
+                "projects": "Projetos",
+                "contact": "Contato",
+                "languages": {
+                    "en": "Inglês",
+                    "es": "Espanhol",
+                    "pt-br": "Português"
+                }
+            }  
         }
     }
 }

@@ -1,24 +1,42 @@
 {
-    "Pages": {
-        "Global": {
-            "Header": {
-                "Options": {
-                    "home": "Inicio",
-                    "about": "Sobre mí",
-                    "experience": "Experiencias",
-                    "projects": "Proyectos",
-                    "contact": "Contacto",
-                    "languages": {
-                        "en": "Inglés",
-                        "es": "Español",
-                        "pt-br": "Portugués"
-                    }
-                }  
-            },
-            "Content": {
-                "hello": "Hola, soy",
-                "work": "Desarrollador Full Stack"
-            }
-        }
+  "Pages": {
+    "Home": {
+      "hello": "Hola, soy",
+      "work": "Desarrollador Full Stack",
+      "metadata": {
+        "experience": "Experiencia",
+        "project": "Proyectos realizados"
+      },
+      "buttons": {
+        "contact": "Contáctame",
+        "cv": "Descargar CV"
+      }
+    },
+    "About": {
+      "title": "Sobre mí",
+      "subtitle": "Desarrollador de Software Full Stack",
+      "paragraphOne": "Graduado en Sistemas de Información por la Universidad Santa Cecília, soy Desarrollador de Software Full Stack con más de 5 años de experiencia. Tengo una gran pasión por resolver problemas complejos, siempre buscando eficiencia e innovación. A lo largo de mi trayectoria, desarrollé proyectos multifuncionales y optimicé procesos críticos, garantizando entregas consistentes con alta calidad.",
+      "paragraphTwo": "Siempre en busca de desafíos que me permitan explorar nuevas tecnologías, aprender más sobre las reglas de negocio y mejorar el rendimiento de sistemas a gran escala.",
+      "buttons": {
+        "contact": "Contáctame",
+        "cv": "Descargar CV"
+      }
     }
+  },
+  "Components": {
+    "Navbar": {
+      "Options": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "experience": "Experiencias",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "languages": {
+          "en": "Inglés",
+          "es": "Español",
+          "pt-br": "Portugués"
+        }
+      }
+    }
+  }
 }

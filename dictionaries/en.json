@@ -1,24 +1,42 @@
 {
-    "Pages": {
-        "Global": {
-            "Header": {
-                "Options": {
-                    "home": "Home",
-                    "about": "About me",
-                    "experience": "Experiences",
-                    "projects": "Projects",
-                    "contact": "Contact",
-                    "languages": {
-                        "en": "English",
-                        "es": "Spanish",
-                        "pt-br": "Portuguese"
-                    }
-                }  
-            },
-            "Content": {
-                "hello": "Hi, I am",
-                "work": "Full Stack Developer"
-            }
-        }
+  "Pages": {
+    "Home": {
+      "hello": "Hi, I'm",
+      "work": "Full Stack Developer",
+      "metadata": {
+        "experience": "Experience",
+        "project": "Completed projects"
+      },
+      "buttons": {
+        "contact": "Contact me",
+        "cv": "Download CV"
+      }
+    },
+    "About": {
+      "title": "About me",
+      "subtitle": "Full Stack Software Developer",
+      "paragraphOne": "Graduated in Information Systems from Santa Cecília University, I am a Full Stack Software Developer with over 5 years of experience. I have a strong passion for solving complex problems, always striving for efficiency and innovation. Throughout my journey, I have developed cross-functional projects and optimized critical processes, ensuring consistent, high-quality deliveries.",
+      "paragraphTwo": "Always seeking challenges that allow me to explore new technologies, gain deeper understanding of business rules, and improve the performance of large-scale systems.",
+      "buttons": {
+        "contact": "Contact me",
+        "cv": "Download CV"
+      }
     }
+  },
+  "Components": {
+    "Navbar": {
+      "Options": {
+        "home": "Home",
+        "about": "About me",
+        "experience": "Experiences",
+        "projects": "Projects",
+        "contact": "Contact",
+        "languages": {
+          "en": "English",
+          "es": "Spanish",
+          "pt-br": "Portuguese"
+        }
+      }
+    }
+  }
 }
