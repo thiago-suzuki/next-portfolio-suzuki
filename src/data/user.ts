@@ -12,7 +12,7 @@ export const metadatasUser: MetadatasUser[] = [
     },
 ]
 
-// Links
+// Technologies
 export const technologiesUser: TechnologiesUser[] = [
     {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
@@ -73,7 +73,6 @@ export const technologiesUser: TechnologiesUser[] = [
         
 ]
 
-
 // Limks
-export const linkPdf: string = "" 
-export const linkWP: string = "" 
+export const linkPdf: string = "/archives/curriculo.pdf" 
+export const linkWP: string = "https://wa.me/5513996042886" 

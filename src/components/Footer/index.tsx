@@ -7,7 +7,7 @@ export function Footer() {
                 </h1>
 
                 <div className="text-sm">
-                    © 2025 Thiago Suzuki
+                    © {new Date().getFullYear()} Thiago Suzuki
                 </div>
             </div>
         </div>
