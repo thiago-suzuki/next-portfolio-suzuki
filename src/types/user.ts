@@ -9,3 +9,8 @@ export type MetadatasUser = {
     quantity: number
     description: string
 }
+
+export type TechnologiesUser = {
+    icon: string;
+    description: string;
+}

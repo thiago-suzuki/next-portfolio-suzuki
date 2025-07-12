@@ -22,6 +22,9 @@
         "contact": "Contact me",
         "cv": "Download CV"
       }
+    },
+    "Experience": {
+        "title": "Experiences"
     }
   },
   "Components": {

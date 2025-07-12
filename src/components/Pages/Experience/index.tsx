@@ -1,8 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+
+import { technologiesUser } from "@/data";
 
 export function Experience() {
+    const t = useTranslations('Pages.Experience')
+    
     return (
         <motion.div 
             initial={{
@@ -22,148 +27,29 @@ export function Experience() {
                     <div className="grid grid-cols-1 gap-8">
                         {/* Header Section */}
                         <div className="text-center">
-                            <h1 className="text-4xl font-bold mb-2">Experience</h1>
+                            <h1 className="text-4xl font-bold mb-2">{t('title')}</h1>
                         </div>
 
                         {/* Main Content */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                             <div className="flex justify-center">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">ƒƒ</span>
+                                    {technologiesUser.map((value, index) => {
+                                        return (
+                                            <div className="flex flex-col items-center" key={'tech ' + index}>
+                                                <div className="relative w-24 h-24">
+                                                    <div className="w-24 h-24 rounded-full bg-[#364153] flex items-center justify-center">
+                                                        <img
+                                                            src={value.icon} // Substitua com o caminho correto do seu SVG
+                                                            alt={value.description}
+                                                            className="w-16 h-16"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <p className="text-primary-500 text-xl font-bold mt-2">{value.description}</p>
                                             </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Figma</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Xd</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Adobe XD</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-b-transparent border-r-transparent absolute top-0 left-0 transform rotate-[130deg]"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Ps</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">85%</p>
-                                        <p className="text-gray-400">Adobe Photoshop</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">ƒƒ</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Figma</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Xd</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Adobe XD</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-b-transparent border-r-transparent absolute top-0 left-0 transform rotate-[130deg]"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Ps</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">85%</p>
-                                        <p className="text-gray-400">Adobe Photoshop</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">ƒƒ</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Figma</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Xd</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Adobe XD</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-b-transparent border-r-transparent absolute top-0 left-0 transform rotate-[130deg]"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Ps</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">85%</p>
-                                        <p className="text-gray-400">Adobe Photoshop</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">ƒƒ</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Figma</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Xd</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">100%</p>
-                                        <p className="text-gray-400">Adobe XD</p>
-                                    </div>
-
-                                    <div className="flex flex-col items-center">
-                                        <div className="relative w-24 h-24">
-                                            <div className="w-24 h-24 rounded-full border-4 border-gray-700"></div>
-                                            <div className="w-24 h-24 rounded-full border-4 border-primary-500 border-l-transparent border-b-transparent border-r-transparent absolute top-0 left-0 transform rotate-[130deg]"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span className="text-2xl">Ps</span>
-                                            </div>
-                                        </div>
-                                        <p className="text-primary-500 text-xl font-bold mt-2">85%</p>
-                                        <p className="text-gray-400">Adobe Photoshop</p>
-                                    </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
 
