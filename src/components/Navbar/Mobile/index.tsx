@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
@@ -23,9 +24,9 @@ export function MobileMenu() {
     const langMobileRef = useRef<HTMLDivElement>(null);
 
     const locales = [
-        { code: "en", label: t('languages.en'), flag: "🇺🇸" },
-        { code: "es", label: t('languages.es'), flag: "🇪🇸" },
-        { code: "pt-br", label: t('languages.pt-br'), flag: "🇧🇷" },
+        { code: "en", label: t('languages.en'), flag: "/usa.svg" },
+        { code: "es", label: t('languages.es'), flag: "/spain.svg" },
+        { code: "pt-br", label: t('languages.pt-br'), flag: "/brazil.svg" },
     ];
 
     const handleLocaleChange = (newLocale: string) => {
@@ -114,7 +115,13 @@ export function MobileMenu() {
                                 className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-300 hover:bg-orange-500/10 rounded"
                             >
                                 <span className="flex items-center gap-2">
-                                    <span>{currentLang?.flag}</span>
+                                    <Image
+                                        src={currentLang?.flag ?? ""}
+                                        alt={currentLang?.label ?? ""}
+                                        width={20}
+                                        height={14}
+                                        className="rounded-sm"
+                                    />  
                                     <span>{currentLang?.label}</span>
                                 </span>
                                 <IoChevronDown className="text-xs" />
@@ -128,7 +135,13 @@ export function MobileMenu() {
                                             onClick={() => handleLocaleChange(l.code)}
                                             className="text-sm text-gray-200 hover:bg-orange-500/10 focus:bg-orange-500/10 active:bg-orange-500/20 flex items-center w-full px-4 py-2"
                                         >
-                                            <span className="mr-2">{l.flag}</span>
+                                            <Image
+                                                src={l.flag}
+                                                alt={l.label}
+                                                width={20}
+                                                height={14}
+                                                className="mr-2 rounded-sm"
+                                            />
                                             {l.label}
                                         </button>
                                     ))}

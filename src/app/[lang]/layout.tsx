@@ -40,12 +40,10 @@ export default async function RootLayout({
     <html lang={lang}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider locale={lang} messages={messages}>
-          <div className="min-h-screen bg-black text-white">
-            <Navbar key='navbar' />
-            {children}
-            <br />
-            <br />
-            <Footer key='footer'/>
+          <div className="flex min-h-screen flex-col bg-black text-white">
+            <Navbar key="navbar" />
+            <main className="flex-1">{children}</main>
+            <Footer key="footer" />
           </div>
         </NextIntlClientProvider>
       </body>

@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import React, { useState, useRef, useEffect } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 import { usePathname, useRouter, locales as localesData, Link } from "@/i18n/routing";
 import { navbarOptions } from "@/data";
@@ -20,9 +21,9 @@ export function DesktopMenu() {
     const langDesktopRef = useRef<HTMLDivElement>(null);
 
     const locales = [
-        { code: "en", label: t('languages.en'), flag: "🇺🇸" },
-        { code: "es", label: t('languages.es'), flag: "🇪🇸" },
-        { code: "pt-br", label: t('languages.pt-br'), flag: "🇧🇷" },
+        { code: "en", label: t('languages.en'), flag: "/usa.svg" },
+        { code: "es", label: t('languages.es'), flag: "/spain.svg" },
+        { code: "pt-br", label: t('languages.pt-br'), flag: "/brazil.svg" },
     ];
 
     const handleLocaleChange = (newLocale: string) => {
@@ -100,7 +101,13 @@ export function DesktopMenu() {
                     onClick={() => setLangDesktopOpen((prev) => !prev)}
                     className="flex items-center gap-2 text-md text-gray-300 hover:text-orange-400"
                 >
-                    <span>{currentLang?.flag}</span>
+                    <Image
+                        src={currentLang?.flag ?? ""}
+                        alt={currentLang?.label ?? ""}
+                        width={20}
+                        height={14}
+                        className="rounded-sm"
+                    />                    
                     <span>{currentLang?.label}</span>
                     <IoChevronDown className="text-xs" />
                 </button>
@@ -113,7 +120,13 @@ export function DesktopMenu() {
                                 onClick={() => handleLocaleChange(l.code)}
                                 className="flex items-center w-full px-4 py-2 text-sm text-gray-200 hover:bg-orange-500/10"
                             >
-                            <span className="mr-2">{l.flag}</span>
+                                <Image
+                                    src={l.flag}
+                                    alt={l.label}
+                                    width={20}
+                                    height={14}
+                                    className="mr-2 rounded-sm"
+                                />
                                 {l.label}
                             </button>
                         ))}

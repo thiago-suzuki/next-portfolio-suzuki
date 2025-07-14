@@ -24,7 +24,7 @@ export function Experience() {
               },
             }}
         >
-            <div className="text-white">
+            <div className="text-white pb-12">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 gap-8">
                         <div className="text-center">
@@ -80,7 +80,7 @@ export function Experience() {
                                                     <div className="flex flex-col">
                                                         <a 
                                                             href={value.linkEnterprise}
-                                                            className="text-[18px] text-ce text-white font-bold"
+                                                            className="text-[18px] lg:text-[22px] text-ce text-white font-bold"
                                                             style={{ textDecoration: "none" }}
                                                             target="_blank"
                                                             rel="noreferrer"
@@ -101,11 +101,11 @@ export function Experience() {
                                                                         className={`absolute left-[1.1rem] top-[7px] h-3.5 w-3.5 ${value.actualPosition ? 'bg-orange-400' : 'bg-gray-300'} rounded-full transform -translate-x-1/2`}
                                                                     />
 
-                                                                    <div className="ml-10 whitespace-nowrap overflow-hidden text-ellipsis">
-                                                                        <strong className="font-[16px]">
+                                                                    <div className="ml-10 overflow-hidden text-ellipsis">
+                                                                        <strong className="text-[16px] lg:text-[20px]">
                                                                             {value.namePosition[locale] || value.namePosition["pt-br"]}
                                                                         </strong>
-                                                                        <div className="font-[14px] text-gray-300">
+                                                                        <div className="text-[14px] lg:text-[18px] text-gray-300">
                                                                             {value.timeAtPosition[locale] || value.timeAtPosition["pt-br"]}
                                                                         </div>
                                                                     </div>

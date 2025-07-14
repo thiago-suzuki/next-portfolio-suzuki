@@ -16,7 +16,7 @@ export function Home() {
     
     return (
         <motion.div 
-            className="container mx-auto my-0 grid grid-cols-1 lg:grid-cols-12 gap-8 p-3 py-15 relative"
+            className="container mx-auto my-0 grid grid-cols-1 lg:grid-cols-12 gap-8 p-12 relative"
             initial={{
               y: 20,
               opacity: 0,
