@@ -14,6 +14,8 @@ import {
 export function Home() {
     const t = useTranslations("Pages.Home");
     
+    const imageProfile = "/images/profile.jpeg"
+    
     return (
         <motion.div 
             className="container mx-auto my-0 grid grid-cols-1 lg:grid-cols-12 gap-8 p-12 relative"
@@ -29,6 +31,18 @@ export function Home() {
               },
             }}
         >
+
+            <div className="flex lg:hidden justify-center">
+                <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-[500px] lg:h-[500px]">
+                    <div className="absolute inset-0 bg-gray-900 rounded-full"></div>
+                        <img
+                            src={imageProfile}
+                            alt="Image Thiago Suzuki"
+                            className="absolute inset-0 w-full h-full object-cover object-center rounded-full"
+                        />
+                    </div>
+            </div>
+
             <div className="lg:col-span-5 flex flex-col justify-center space-y-6 ">
                 <div className="text-center lg:text-left">
                     <p className="text-gray-300">{t('hello')}</p>
@@ -78,11 +92,11 @@ export function Home() {
                 </div>
             </div>
 
-            <div className="lg:col-span-7 flex justify-center lg:justify-end">
+            <div className="col-span-7 hidden lg:flex justify-end">
                 <div className="relative w-60 h-60 sm:w-80 sm:h-80 lg:w-[500px] lg:h-[500px]">
                     <div className="absolute inset-0 bg-gray-900 rounded-full"></div>
                         <img
-                            src="/images/profile.jpeg"
+                            src={imageProfile}
                             alt="Image Thiago Suzuki"
                             className="absolute inset-0 w-full h-full object-cover object-center rounded-full"
                         />
