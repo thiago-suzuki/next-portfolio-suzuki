@@ -16,7 +16,7 @@ export function Home() {
     
     return (
         <motion.div 
-            className="container mx-auto my-0 grid grid-cols-1 lg:grid-cols-12 gap-8 p-3 relative"
+            className="container mx-auto my-0 grid grid-cols-1 lg:grid-cols-12 gap-8 p-3 py-15 relative"
             initial={{
               y: 20,
               opacity: 0,
@@ -29,7 +29,7 @@ export function Home() {
               },
             }}
         >
-            <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
+            <div className="lg:col-span-5 flex flex-col justify-center space-y-6 ">
                 <div className="text-center lg:text-left">
                     <p className="text-gray-300">{t('hello')}</p>
                     <h2 className="text-xl font-semibold text-gray-200">Thiago Suzuki</h2>
