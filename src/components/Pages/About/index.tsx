@@ -58,7 +58,7 @@ export function About() {
                                     {t('paragraphThree')}
                                 </p>
 
-                                <div className="flex justify-start lg:justify-center items-center gap-3">
+                                <div className="flex justify-center items-center gap-3">
                                     <Link href={linkWP} target="_blank">
                                         <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition duration-300">
                                             {t('buttons.contact')}
