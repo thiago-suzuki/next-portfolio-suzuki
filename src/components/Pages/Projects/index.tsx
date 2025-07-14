@@ -1,8 +1,19 @@
 "use client"
 
 import { motion } from "framer-motion";
+import Link from "next/link"; 
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import { FaGithub } from "react-icons/fa";
+
+import { Button } from "@/components";
+import { projectsUser } from "@/data";
+
 
 export function Projects() {
+    const t = useTranslations('Pages.Projects')
+    const locale = useLocale()
+
     return (
         <motion.div 
             initial={{
@@ -17,49 +28,55 @@ export function Projects() {
               },
             }}
         >
-            <div className="text-white py-8">
+            <div className="text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 gap-8">
-                        {/* Header Section */}
                         <div className="text-center">
-                            <h1 className="text-4xl font-bold mb-2">Projects</h1>
-                            <p className="text-gray-400">User Interface And User Experience And Also Video Editing</p>
+                            <h1 className="text-4xl font-bold mb-2">{t('title')}</h1>
                         </div>
 
-                        {/* Main Content */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                            {/* Profile Image */}
-                            <div className="flex justify-center">
-                                <div className="w-full max-w-md bg-black rounded-lg overflow-hidden">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1586528116493-a029325540fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-                                        alt="Professional portrait"
-                                        className="w-full h-auto"
-                                        keywords="professional, man, suit, formal, black, portrait, business"
-                                    />
-                                </div>
-                            </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                            {projectsUser.map((value, index) => {
+                                return (
+                                    <div
+                                        key={index}
+                                        className="relative flex flex-col rounded-2xl bg-[#364153] border-[#364135] overflow-hidden min-h-[400px]"
+                                    >
+                                        <div className="group-hover:scale-110 transition-all duration-1000">
+                                            <Image
+                                                src={value.image}
+                                                alt={value.title}
+                                                width={500}
+                                                height={500}
+                                            />
+                                        </div>
 
-                            {/* Description */}
-                            <div className="text-gray-400">
-                                <p className="mb-6 leading-relaxed">
-                                    A software engineer, the modern-day architect of digital realms, navigates the
-                                    ethereal landscapes of code, sculpting intangible structures that shape our
-                                    technological world. With fingers poised over keyboards like virtuoso pianists, they
-                                    compose symphonies of logic, their minds a labyrinth of algorithms and
-                                    solutions.Their canvas is a screen, a vast expanse where lines of code dance in
-                                    intricate patterns, weaving the fabric of programs and applications. Each keystroke
-                                    is a brushstroke, crafting intricate architectures and breathing life into
-                                    innovative designs.In this digital atelier, they don the mantle of problem solvers,
-                                    confronting bugs and glitches like valiant knights in an ever-evolving quest for
-                                    perfection. Debugging becomes a noble pursuit, unraveling the mysteries hidden
-                                    within the tangled webs of code. designs.In this digital atelier.
-                                </p>
+                                        <div className="flex flex-col justify-between flex-1 px-6 py-6">
+                                            <div>
+                                                <h3 className="font-bold mb-4 capitalize">{value.title}</h3>
+                                                <p className="text-sm text-gray-300">
+                                                    {value.description[locale] || value.description["pt-br"]}
+                                                </p>
+                                            </div>
 
-                                <button className="border border-gray-600 text-white px-6 py-2 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
-                                Download CV
-                                </button>
-                            </div>
+                                            <div className="mt-6 flex justify-center gap-3">
+                                                {value.deploy && (
+                                                    <Link href={value.deploy} target="_blank">
+                                                        <Button type="button" title="Read more" className="bg-black">
+                                                            {t('buttons.deploy')}
+                                                        </Button>
+                                                    </Link>
+                                                )}
+                                                <Link href={value.source} target="_blank">
+                                                    <Button type="button" title="View Code" variant="outline" className="text-black">
+                                                        <FaGithub size={16}/> {t('buttons.source')}
+                                                    </Button>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

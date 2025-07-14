@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -22,15 +23,13 @@ export function Experience() {
               },
             }}
         >
-            <div className="text-white py-8">
+            <div className="text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 gap-8">
-                        {/* Header Section */}
                         <div className="text-center">
                             <h1 className="text-4xl font-bold mb-2">{t('title')}</h1>
                         </div>
 
-                        {/* Main Content */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                             <div className="flex justify-center">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -39,10 +38,11 @@ export function Experience() {
                                             <div className="flex flex-col items-center" key={'tech ' + index}>
                                                 <div className="relative w-24 h-24">
                                                     <div className="w-24 h-24 rounded-full bg-[#364153] flex items-center justify-center">
-                                                        <img
-                                                            src={value.icon} // Substitua com o caminho correto do seu SVG
+                                                        <Image
+                                                            src={value.icon}
                                                             alt={value.description}
-                                                            className="w-16 h-16"
+                                                            width={55}
+                                                            height={55}
                                                         />
                                                     </div>
                                                 </div>

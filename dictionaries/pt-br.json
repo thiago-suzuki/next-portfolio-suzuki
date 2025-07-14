@@ -25,6 +25,13 @@
         },
         "Experience": {
             "title": "Experiências"
+        },
+        "Projects": {
+            "title": "Projetos",
+            "buttons": {
+                "deploy":"Deploy",
+                "source":"Repositório"
+            }
         }
     },
     "Components": {

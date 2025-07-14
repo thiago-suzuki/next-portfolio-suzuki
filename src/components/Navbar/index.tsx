@@ -22,7 +22,7 @@ export function Navbar() {
 
   return (
     <motion.div 
-      className="lg:col-span-12 flex justify-between items-center mb-10 relative p-6 sm:p-12"
+      className="lg:col-span-12 flex justify-between items-center mb-10 relative p-8"
       variants={headerAnimations}
       initial="hidden"
       animate="show"

@@ -38,12 +38,12 @@ export function DesktopMenu() {
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-        const target = event.target as Node;
-        if (
-            !langDesktopRef.current?.contains(target)
-        ) {
-            setLangDesktopOpen(false);
-        }
+            const target = event.target as Node;
+            if (
+                !langDesktopRef.current?.contains(target)
+            ) {
+                setLangDesktopOpen(false);
+            }
         };
 
         document.addEventListener("mousedown", handleClickOutside);

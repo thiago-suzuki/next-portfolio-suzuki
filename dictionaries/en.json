@@ -24,7 +24,14 @@
       }
     },
     "Experience": {
-        "title": "Experiences"
+      "title": "Experiences"
+    },
+    "Projects": {
+      "title": "Projects",
+      "buttons": {
+        "deploy":"Deploy",
+        "source":"Repository"
+      }
     }
   },
   "Components": {

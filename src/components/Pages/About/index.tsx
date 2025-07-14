@@ -26,7 +26,7 @@ export function About() {
               },
             }}
         >
-            <div className="text-white pb-12">
+            <div className="text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 gap-8">
                         <div className="text-center">
@@ -58,21 +58,20 @@ export function About() {
                                     {t('paragraphThree')}
                                 </p>
 
-                                <Link href={linkWP} target="_blank">
-                                    <button className="mr-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition duration-300">
-                                        {t('buttons.contact')}
-                                    </button>
-                                </Link>
-                                <Link href={linkPdf} target="_blank">
-                                    <button className="border border-gray-600 text-white px-6 py-2 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
-                                        {t('buttons.cv')}
-                                    </button>
-                                </Link>
+                                <div className="flex justify-start lg:justify-center items-center gap-3">
+                                    <Link href={linkWP} target="_blank">
+                                        <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition duration-300">
+                                            {t('buttons.contact')}
+                                        </button>
+                                    </Link>
+                                    <Link href={linkPdf} target="_blank">
+                                        <button className="border border-gray-600 text-white px-6 py-2 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
+                                            {t('buttons.cv')}
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-
-                        {/* Skills Section */}
-
                     </div>
                 </div>
             </div>
