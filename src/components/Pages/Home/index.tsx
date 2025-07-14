@@ -83,7 +83,7 @@ export function Home() {
                     <div className="absolute inset-0 bg-gray-900 rounded-full"></div>
                         <img
                             src="/images/profile.jpeg"
-                            alt="Professional man in black suit"
+                            alt="Image Thiago Suzuki"
                             className="absolute inset-0 w-full h-full object-cover object-center rounded-full"
                         />
                     </div>

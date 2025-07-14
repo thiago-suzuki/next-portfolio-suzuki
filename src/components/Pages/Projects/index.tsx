@@ -39,7 +39,7 @@ export function Projects() {
                             {projectsUser.map((value, index) => {
                                 return (
                                     <div
-                                        key={index}
+                                        key={'project ' + index}
                                         className="relative flex flex-col rounded-2xl bg-[#364153] border-[#364135] overflow-hidden min-h-[400px]"
                                     >
                                         <div className="group-hover:scale-110 transition-all duration-1000">
