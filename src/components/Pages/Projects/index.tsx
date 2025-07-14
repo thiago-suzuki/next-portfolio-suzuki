@@ -40,14 +40,15 @@ export function Projects() {
                                 return (
                                     <div
                                         key={'project ' + index}
-                                        className="relative flex flex-col rounded-2xl bg-[#364153] border-[#364135] overflow-hidden min-h-[400px]"
+                                        className="relative flex flex-col rounded-2xl bg-[#364153] border-[#364135] overflow-hidden min-h-[400px] group"
                                     >
-                                        <div className="group-hover:scale-110 transition-all duration-1000">
+                                        <div className="overflow-hidden">
                                             <Image
                                                 src={value.image}
                                                 alt={value.title}
                                                 width={500}
                                                 height={500}
+                                                className="transform transition-transform duration-1000 group-hover:scale-110" 
                                             />
                                         </div>
 

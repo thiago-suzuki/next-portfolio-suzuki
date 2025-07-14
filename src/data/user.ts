@@ -188,6 +188,17 @@ export const projectsUser: ProjectsUser[] = [
     source: "https://github.com/thiago-suzuki/react-native-na-pratica-01"
   },
   {
+    title: "Freelance Hours",
+    image: ProjectFreelanceImg,
+    description: {
+      "pt-br": "Aplicação Freelance Hours feito durante o curso gratuito de PHP da Rocketseat",
+      es: "Aplicación Freelance Hours desarrollada durante el curso gratuito de PHP de Rocketseat",
+      en: "Freelance Hours application developed during Rocketseat’s free PHP course"
+    },
+    deploy: null,
+    source: "https://github.com/thiago-suzuki/php-freelance-hours"
+  },
+  {
     title: "Dashboards Power BI",
     image: ProjectImg,
     description: {
@@ -208,17 +219,6 @@ export const projectsUser: ProjectsUser[] = [
     },
     deploy: null,
     source: "https://github.com/thiago-suzuki/CsharpPraticaRocketseat"
-  },
-  {
-    title: "Freelance Hours",
-    image: ProjectFreelanceImg,
-    description: {
-      "pt-br": "Aplicação Freelance Hours feito durante o curso gratuito de PHP da Rocketseat",
-      es: "Aplicación Freelance Hours desarrollada durante el curso gratuito de PHP de Rocketseat",
-      en: "Freelance Hours application developed during Rocketseat’s free PHP course"
-    },
-    deploy: null,
-    source: "https://github.com/thiago-suzuki/php-freelance-hours"
   }
 ]
 
