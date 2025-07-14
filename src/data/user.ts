@@ -1,5 +1,5 @@
 // Imports Types
-import { MetadatasUser, TechnologiesUser, ProjectsUser } from "@/types/user";
+import { MetadatasUser, TechnologiesUser, ProjectsUser, EnterprisesUser } from "@/types/user";
 
 // Imports Images Technologies
 import SkillAngularImg from "@/assets/skills/angular.png"
@@ -29,6 +29,9 @@ import ProjectFreelanceImg from "@/assets/projects/freelance.png"
 import ProjectOrbitImg from "@/assets/projects/orbit.png"
 import ProjectImg from "@/assets/projects/project.png"
 import ProjectResumeCraftImg from "@/assets/projects/resume-craft.png"
+
+// Import Images Enterprises
+import EnterpriseGBMImg from "@/assets/enterprises/gbmtech_logo.jpeg"
 
 
 // Links User
@@ -220,6 +223,83 @@ export const projectsUser: ProjectsUser[] = [
     deploy: null,
     source: "https://github.com/thiago-suzuki/CsharpPraticaRocketseat"
   }
+]
+
+
+// Enterprises
+export const enterprisesUser: EnterprisesUser[] = [
+  {
+    nameEnterprise: "GBM Tech & Control",
+    imageEnterprise: EnterpriseGBMImg,
+    linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
+    positions: [
+      {
+        namePosition: {
+          "pt-br": "Desenvolvedor Full Stack Júnior III",
+          es: "Desarrollador Full Stack Junior III",
+          en: "Junior Full Stack Developer III"
+        },
+        timeAtPosition: {
+          "pt-br": "Mar 2025 - O momento",
+          es: "Mar 2025 - Presente",
+          en: "Mar 2025 - Present"
+        },
+        actualPosition: true,
+      },
+      {
+        namePosition: {
+          "pt-br": "Desenvolvedor Full Stack Júnior II",
+          es: "Desarrollador Full Stack Junior II",
+          en: "Junior Full Stack Developer II"
+        },
+        timeAtPosition: {
+          "pt-br": "Jun 2024 - Mar 2025",
+          es: "Jun 2024 - Mar 2025",
+          en: "Jun 2024 - Mar 2025"
+        },
+        actualPosition: false,
+      },
+      {
+        namePosition: {
+          "pt-br": "Desenvolvedor Full Stack Júnior I",
+          es: "Desarrollador Full Stack Junior I",
+          en: "Junior Full Stack Developer I"
+        },
+        timeAtPosition: {
+          "pt-br": "Mar 2023 - Jun 2024",
+          es: "Mar 2023 - Jun 2024",
+          en: "Mar 2023 - Jun 2024"
+        },
+        actualPosition: false,
+      },
+      {
+        namePosition: {
+          "pt-br": "Técnico em Desenvolvimento de Sistemas",
+          es: "Técnico en Desarrollo de Sistemas",
+          en: "Systems Development Technician"
+        },
+        timeAtPosition: {
+          "pt-br": "Jun 2022 - Mar 2023",
+          es: "Jun 2022 - Mar 2023",
+          en: "Jun 2022 - Mar 2023"
+        },
+        actualPosition: false,
+      },
+      {
+        namePosition: {
+          "pt-br": "Estagiário em Desenvolvimento de Software",
+          es: "Pasante en Desarrollo de Software",
+          en: "Software Development Intern"
+        },
+        timeAtPosition: {
+          "pt-br": "Out 2021 - Jun 2022",
+          es: "Oct 2021 - Jun 2022",
+          en: "Oct 2021 - Jun 2022"
+        },
+        actualPosition: false,
+      }
+    ]
+  },
 ]
 
 

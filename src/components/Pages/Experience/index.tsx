@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { technologiesUser } from "@/data";
+import { enterprisesUser, technologiesUser } from "@/data";
 
 export function Experience() {
+    const locale = useLocale();
     const t = useTranslations('Pages.Experience')
     
     return (
@@ -31,7 +32,9 @@ export function Experience() {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                            <div className="flex justify-center">
+                            <div 
+                                className={`flex justify-center ${enterprisesUser.length > 1 ? 'lg:max-h-[400px]' : 'lg:max-h-[100%]' }`}
+                            >
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                                     {technologiesUser.map((value, index) => {
                                         return (
@@ -53,25 +56,67 @@ export function Experience() {
                                 </div>
                             </div>
 
-                            {/* Description */}
-                            <div className="text-gray-400">
-                                <p className="mb-6 leading-relaxed">
-                                    A software engineer, the modern-day architect of digital realms, navigates the
-                                    ethereal landscapes of code, sculpting intangible structures that shape our
-                                    technological world. With fingers poised over keyboards like virtuoso pianists, they
-                                    compose symphonies of logic, their minds a labyrinth of algorithms and
-                                    solutions.Their canvas is a screen, a vast expanse where lines of code dance in
-                                    intricate patterns, weaving the fabric of programs and applications. Each keystroke
-                                    is a brushstroke, crafting intricate architectures and breathing life into
-                                    innovative designs.In this digital atelier, they don the mantle of problem solvers,
-                                    confronting bugs and glitches like valiant knights in an ever-evolving quest for
-                                    perfection. Debugging becomes a noble pursuit, unraveling the mysteries hidden
-                                    within the tangled webs of code. designs.In this digital atelier.
-                                </p>
+                            <div className="block lg:hidden border-t border-gray-700 my-6" />
 
-                                <button className="border border-gray-600 text-white px-6 py-2 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
-                                Download CV
-                                </button>
+                            <div className="flex border-gray-700 lg:border-l lg:pl-8">
+                                <div className="grid grid-cols-1 gap-8">
+                                    {enterprisesUser.map((value, index) => {
+                                        const isLast = index === enterprisesUser.length - 1;
+                                        const hasMultiple = enterprisesUser.length > 1;
+
+                                        return (
+                                            <div 
+                                                key={'enterprise ' + index}
+                                                className={`pb-8 ${hasMultiple && !isLast ? 'border-b border-gray-700' : ''}`}
+                                            >
+                                                <div className="ml-[18px] flex items-center gap-4">
+                                                    <Image
+                                                        src={value.imageEnterprise}
+                                                        alt={value.nameEnterprise}
+                                                        width={70}
+                                                        height={70}
+                                                        className="rounded-[6px] object-contain"
+                                                    />
+                                                    <div className="flex flex-col">
+                                                        <a 
+                                                            href={value.linkEnterprise}
+                                                            className="text-[18px] text-ce text-white font-bold"
+                                                            style={{ textDecoration: "none" }}
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                        >
+                                                            {value.nameEnterprise}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div className="relative flex flex-col gap-7 p-8">
+                                                    <div className="absolute left-12 top-12 bottom-[28px] w-[0.22rem] bg-[#ccc]" />
+                                                        {value.positions.map((value, indexPP) => {
+                                                            return (
+                                                                <div
+                                                                    key={`postion ${index}${indexPP}`} 
+                                                                    className="relative flex gap-3 items-start"
+                                                                >
+                                                                    <div  
+                                                                        className={`absolute left-[1.1rem] top-[7px] h-3.5 w-3.5 ${value.actualPosition ? 'bg-orange-400' : 'bg-gray-300'} rounded-full transform -translate-x-1/2`}
+                                                                    />
+
+                                                                    <div className="ml-10 whitespace-nowrap overflow-hidden text-ellipsis">
+                                                                        <strong className="font-[16px]">
+                                                                            {value.namePosition[locale] || value.namePosition["pt-br"]}
+                                                                        </strong>
+                                                                        <div className="font-[14px] text-gray-300">
+                                                                            {value.timeAtPosition[locale] || value.timeAtPosition["pt-br"]}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            )
+                                                        })}
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>

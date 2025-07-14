@@ -23,3 +23,16 @@ export type ProjectsUser = {
   deploy: string | null;
   source: string;
 };
+
+export type EnterprisesUser = {
+    nameEnterprise: string;
+    imageEnterprise: StaticImageData;
+    linkEnterprise: string;
+    positions: PositionsEnterpriseUser[]
+}
+
+export type PositionsEnterpriseUser = {
+    namePosition: Record<string, string>;
+    timeAtPosition: Record<string, string>;
+    actualPosition: boolean
+}
