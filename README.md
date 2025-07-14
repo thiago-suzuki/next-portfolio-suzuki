@@ -14,6 +14,8 @@ Portfoilo pessoal para mostrar um pouco das minhas experiências e projetos
 - [TailwindCSS](https://tailwindcss.com/) > Extensão para o NextJS para estilização das páginas
 - [Shadcn](https://ui-v4.shadcn.com/) > Biblioteca de Componentes para o NextJS
 - [React Icons](https://www.react-icons.com/) > Biblioteca de ícones
+- [Next Intl](https://next-intl.dev/) > Biblioteca para tradução de textos
+- [Motion](https://motion.dev/) > Biblioteca para Animação
 
 
 <br /><br />
