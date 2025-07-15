@@ -28,11 +28,17 @@ export type EnterprisesUser = {
     nameEnterprise: string;
     imageEnterprise: StaticImageData;
     linkEnterprise: string;
-    positions: PositionsEnterpriseUser[]
+    positions: PositionsEnterpriseUser[];
 }
 
 export type PositionsEnterpriseUser = {
     namePosition: Record<string, string>;
     timeAtPosition: Record<string, string>;
-    actualPosition: boolean
+    actualPosition: boolean;
+}
+
+export type ParagraphsAboutUser = {
+    one: Record<string, string>;
+    two: Record<string, string>;
+    three: Record<string, string>;
 }

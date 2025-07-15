@@ -3,10 +3,13 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { FaFilePdf } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
+import { Button } from "@/components";
 import { 
     linkPdf,
-    linkWP,
+    linkEmail,
     metadatasUser, 
     socialMedias 
 } from "@/data";
@@ -68,15 +71,15 @@ export function Home() {
                 </div>
 
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                    <Link href={linkWP} target="_blank">
-                        <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition duration-300">
-                            {t('buttons.contact')}
-                        </button>
+                    <Link href={linkEmail} target="_blank">
+                        <Button type="button" className="bg-orange-500 hover:bg-orange-600 items-center text-white text-[16px] px-6 py-6 rounded-md transition duration-300">
+                            <MdEmail size={16} /> {t('buttons.contact')}
+                        </Button>
                     </Link>
                     <Link href={linkPdf} target="_blank">
-                        <button className="border border-gray-600 text-white px-6 py-2 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
-                            {t('buttons.cv')}
-                        </button>
+                        <Button type="button" className="border border-gray-600 text-white text-[16px] px-6 py-6 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
+                            <FaFilePdf size={16} /> {t('buttons.cv')}
+                        </Button>
                     </Link>
                 </div>
 

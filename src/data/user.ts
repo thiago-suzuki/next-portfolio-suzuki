@@ -1,5 +1,5 @@
 // Imports Types
-import { MetadatasUser, TechnologiesUser, ProjectsUser, EnterprisesUser } from "@/types/user";
+import { MetadatasUser, TechnologiesUser, ProjectsUser, EnterprisesUser, ParagraphsAboutUser } from "@/types/user";
 
 // Imports Images Technologies
 import SkillAngularImg from "@/assets/skills/angular.png"
@@ -36,7 +36,7 @@ import EnterpriseGBMImg from "@/assets/enterprises/gbmtech_logo.jpeg"
 
 // Links User
 export const linkPdf: string = "/archives/curriculo.pdf" 
-export const linkWP: string = "https://wa.me/5513996042886"
+export const linkEmail: string = "mailto:thiagoikenaga@gmail.com"
  
 
 // Technologies User
@@ -314,3 +314,22 @@ export const metadatasUser: MetadatasUser[] = [
         description: "project"
     },
 ]
+
+export const paragraphsAboutUser: ParagraphsAboutUser = {
+  one: {
+    "pt-br": "Olá, meu nome é Thiago Suzuki, sou graduado em Bacharelado de Sistemas de Informação pela Universidade Santa Cecília. Atualmente sou Desenvolvedor de Software Full Stack. Apaixonado por tecnologia e resolução de problemas complexos, atuo com foco em eficiência, inovação e qualidade em cada entrega.",
+    es: "Hola, mi nombre es Thiago Suzuki, soy licenciado en Sistemas de Información por la Universidad Santa Cecília. Actualmente soy Desarrollador de Software Full Stack. Apasionado por la tecnología y la resolución de problemas complejos, actúo con enfoque en eficiencia, innovación y calidad en cada entrega.",
+    en: "Hello, my name is Thiago Suzuki. I have a Bachelor's degree in Information Systems from Santa Cecília University. I currently work as a Full Stack Software Developer. Passionate about technology and solving complex problems, I focus on efficiency, innovation, and quality in every delivery."
+  },
+  two: {
+    "pt-br": "Ao longo da minha trajetória, liderei e colaborei em projetos multifuncionais, otimizando processos críticos e garantindo soluções robustas e escaláveis. Tenho facilidade em compreender regras de negócio e transformar desafios técnicos em oportunidades de melhoria contínua.",
+    es: "A lo largo de mi trayectoria, he liderado y colaborado en proyectos multifuncionales, optimizando procesos críticos y asegurando soluciones robustas y escalables. Tengo facilidad para comprender reglas de negocio y transformar desafíos técnicos en oportunidades de mejora continua.",
+    en: "Throughout my career, I have led and collaborated on cross-functional projects, optimizing critical processes and ensuring robust, scalable solutions. I have a strong ability to understand business rules and turn technical challenges into opportunities for continuous improvement."
+  },
+  three: {
+    "pt-br": "Estou sempre em busca de novos desafios que envolvam tecnologias emergentes, arquitetura de sistemas e alta performance, contribuindo ativamente para o crescimento de produtos e equipes. Se você quiser saber mais sobre meu trabalho, entre em contato comigo pra saber mais!",
+    es: "Siempre estoy en busca de nuevos desafíos que involucren tecnologías emergentes, arquitectura de sistemas y alto rendimiento, contribuyendo activamente al crecimiento de productos y equipos. ¡Si quieres saber más sobre mi trabajo, no dudes en contactarme!",
+    en: "I’m always looking for new challenges involving emerging technologies, system architecture, and high performance, actively contributing to the growth of products and teams. If you’d like to know more about my work, feel free to reach out!"
+  }
+}
+

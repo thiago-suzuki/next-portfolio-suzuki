@@ -15,9 +15,6 @@
     "About": {
       "title": "About me",
       "subtitle": "Full Stack Software Developer",
-       "paragraphOne": "Full Stack Software Developer with over 5 years of experience, graduated in Information Systems from Universidade Santa Cecília. Passionate about technology and solving complex problems, I focus on efficiency, innovation, and quality in every delivery.",
-      "paragraphTwo": "Throughout my career, I have led and collaborated on cross-functional projects, optimizing critical processes and ensuring robust and scalable solutions. I have a strong ability to understand business rules and turn technical challenges into continuous improvement opportunities.",
-      "paragraphThree": "I am always looking for new challenges involving emerging technologies, system architecture, and high performance, actively contributing to the growth of products and teams.",
       "buttons": {
         "contact": "Contact me",
         "cv": "Download CV"
