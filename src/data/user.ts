@@ -317,9 +317,9 @@ export const metadatasUser: MetadatasUser[] = [
 
 export const paragraphsAboutUser: ParagraphsAboutUser = {
   one: {
-    "pt-br": "Olá, meu nome é Thiago Suzuki, sou graduado em Bacharelado de Sistemas de Informação pela Universidade Santa Cecília. Atualmente sou Desenvolvedor de Software Full Stack. Apaixonado por tecnologia e resolução de problemas complexos, atuo com foco em eficiência, inovação e qualidade em cada entrega.",
-    es: "Hola, mi nombre es Thiago Suzuki, soy licenciado en Sistemas de Información por la Universidad Santa Cecília. Actualmente soy Desarrollador de Software Full Stack. Apasionado por la tecnología y la resolución de problemas complejos, actúo con enfoque en eficiencia, innovación y calidad en cada entrega.",
-    en: "Hello, my name is Thiago Suzuki. I have a Bachelor's degree in Information Systems from Santa Cecília University. I currently work as a Full Stack Software Developer. Passionate about technology and solving complex problems, I focus on efficiency, innovation, and quality in every delivery."
+    "pt-br": "Sou graduado em Bacharelado em Sistemas de Informação pela Universidade Santa Cecília e atualmente atuo como Desenvolvedor de Software Full Stack. Tenho como foco a eficiência, a inovação e a qualidade em cada entrega, com forte interesse na resolução de problemas complexos por meio de soluções tecnológicas eficazes e bem estruturadas.",
+    "es": "Soy licenciado en Sistemas de Información por la Universidade Santa Cecília y actualmente trabajo como Desarrollador de Software Full Stack. Me enfoco en la eficiencia, la innovación y la calidad en cada entrega, con un fuerte interés en la resolución de problemas complejos mediante soluciones tecnológicas eficaces y bien estructuradas.",
+    "en": "I hold a Bachelor's degree in Information Systems from Universidade Santa Cecília and currently work as a Full Stack Software Developer. I focus on efficiency, innovation, and quality in every delivery, with a strong interest in solving complex problems through effective and well-structured technological solutions."
   },
   two: {
     "pt-br": "Ao longo da minha trajetória, liderei e colaborei em projetos multifuncionais, otimizando processos críticos e garantindo soluções robustas e escaláveis. Tenho facilidade em compreender regras de negócio e transformar desafios técnicos em oportunidades de melhoria contínua.",
