@@ -70,19 +70,18 @@ export function Home() {
                     })}
                 </div>
 
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                <div className="flex justify-center lg:justify-start items-center gap-3">
                     <Link href={linkEmail} target="_blank">
-                        <Button type="button" className="bg-orange-500 hover:bg-orange-600 items-center text-white text-[16px] px-6 py-6 rounded-md transition duration-300">
+                        <Button className="bg-orange-500 hover:bg-orange-600 text-white text-[16px] px-6 py-6 rounded-md transition duration-300">
                             <MdEmail size={16} /> {t('buttons.contact')}
                         </Button>
                     </Link>
                     <Link href={linkPdf} target="_blank">
-                        <Button type="button" className="border border-gray-600 text-white text-[16px] px-6 py-6 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
+                        <Button className="border border-gray-600 text-white text-[16px] px-6 py-6 rounded-md hover:border-orange-500 hover:bg-orange-500/10 transition">
                             <FaFilePdf size={16} /> {t('buttons.cv')}
                         </Button>
                     </Link>
                 </div>
-
                 <div className="flex flex-row divide-x divide-gray-800 border-t border-gray-800 pt-5 overflow-x-auto">
                     {metadatasUser.map((value, index) => {
                         return (
