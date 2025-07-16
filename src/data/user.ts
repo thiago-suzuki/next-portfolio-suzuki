@@ -318,8 +318,8 @@ export const metadatasUser: MetadatasUser[] = [
 export const paragraphsAboutUser: ParagraphsAboutUser = {
   one: {
     "pt-br": "Sou graduado em Bacharelado em Sistemas de Informação pela Universidade Santa Cecília e atualmente atuo como Desenvolvedor de Software Full Stack. Tenho como foco a eficiência, a inovação e a qualidade em cada entrega, com forte interesse na resolução de problemas complexos por meio de soluções tecnológicas eficazes e bem estruturadas.",
-    "es": "Soy licenciado en Sistemas de Información por la Universidade Santa Cecília y actualmente trabajo como Desarrollador de Software Full Stack. Me enfoco en la eficiencia, la innovación y la calidad en cada entrega, con un fuerte interés en la resolución de problemas complejos mediante soluciones tecnológicas eficaces y bien estructuradas.",
-    "en": "I hold a Bachelor's degree in Information Systems from Universidade Santa Cecília and currently work as a Full Stack Software Developer. I focus on efficiency, innovation, and quality in every delivery, with a strong interest in solving complex problems through effective and well-structured technological solutions."
+    "es": "Soy licenciado en Sistemas de Información por la Universidad Santa Cecília y actualmente trabajo como Desarrollador de Software Full Stack. Me enfoco en la eficiencia, la innovación y la calidad en cada entrega, con un fuerte interés en la resolución de problemas complejos mediante soluciones tecnológicas eficaces y bien estructuradas.",
+    "en": "I hold a Bachelor's degree in Information Systems from Santa Cecília Universitu and currently work as a Full Stack Software Developer. I focus on efficiency, innovation, and quality in every delivery, with a strong interest in solving complex problems through effective and well-structured technological solutions."
   },
   two: {
     "pt-br": "Ao longo da minha trajetória, liderei e colaborei em projetos multifuncionais, otimizando processos críticos e garantindo soluções robustas e escaláveis. Tenho facilidade em compreender regras de negócio e transformar desafios técnicos em oportunidades de melhoria contínua.",
