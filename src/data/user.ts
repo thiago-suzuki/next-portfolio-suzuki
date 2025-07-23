@@ -27,8 +27,10 @@ import ProjectCookAppImg from "@/assets/projects/cook-app.png"
 import ProjectEcommerceImg from "@/assets/projects/eccommerce.png"
 import ProjectFreelanceImg from "@/assets/projects/freelance.png"
 import ProjectOrbitImg from "@/assets/projects/orbit.png"
+import ProjectPowerBIImg from "@/assets/projects/power-bi.png"
 import ProjectImg from "@/assets/projects/project.png"
 import ProjectResumeCraftImg from "@/assets/projects/resume-craft.png"
+import ProjectTKSWeatherImg from "@/assets/projects/tks-weather.png"
 
 // Import Images Enterprises
 import EnterpriseGBMImg from "@/assets/enterprises/gbmtech_logo.jpeg"
@@ -102,6 +104,17 @@ export const technologiesUser: TechnologiesUser[] = [
 
 // Projects User
 export const projectsUser: ProjectsUser[] = [
+  {
+    title: "TKS Weather",
+    image: ProjectTKSWeatherImg,
+    description: {
+      "pt-br": "App de Consulta da Previsão do Tempo, Temperatura e Detalhes do Clima ",
+      es: "Aplicación de Consulta de Previsión del Tiempo, Temperatura y Detalles del Clima",
+      en: "Weather Forecast, Temperature and Weather Details App"
+    },
+    deploy: "https://tks-weather.vercel.app",
+    source: "https://github.com/thiago-suzuki/tks-weather"
+  },
   {
     title: "Agents I.A",
     image: ProjectAgentsImg,
@@ -203,7 +216,7 @@ export const projectsUser: ProjectsUser[] = [
   },
   {
     title: "Dashboards Power BI",
-    image: ProjectImg,
+    image: ProjectPowerBIImg,
     description: {
       "pt-br": "Dashboards feitos durante o Intensivão de Power BI da Hashtag Treinamentos",
       es: "Dashboards creados durante el Intensivo de Power BI de Hashtag Treinamentos",
@@ -222,7 +235,7 @@ export const projectsUser: ProjectsUser[] = [
     },
     deploy: null,
     source: "https://github.com/thiago-suzuki/CsharpPraticaRocketseat"
-  }
+  },
 ]
 
 
