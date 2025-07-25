@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { IoChevronDown } from "react-icons/io5";
+import { IoChevronDown, IoClose } from "react-icons/io5";
 import { motion, Variants } from "framer-motion";
 
 import { usePathname, useRouter, locales as localesData, Link } from "@/i18n/routing";
@@ -83,8 +83,9 @@ export function MobileMenu() {
             <button
                 onClick={() => setMenuOpen((prev) => !prev)}
                 className="text-orange-500 text-2xl focus:outline-none"
+                aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             >
-                <FaBars />
+                {menuOpen ? <IoClose className="text-4xl" /> : <FaBars/>}
             </button>
 
             <div
