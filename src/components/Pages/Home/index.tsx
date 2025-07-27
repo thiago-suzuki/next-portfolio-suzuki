@@ -82,7 +82,8 @@ export function Home() {
                         </Button>
                     </Link>
                 </div>
-                <div className="flex flex-row divide-x divide-gray-800 border-t border-gray-800 pt-5 overflow-x-auto">
+
+                <div className="flex flex-row justify-center lg:justify-start divide-x divide-gray-800 border-t border-gray-800 pt-5 overflow-x-auto">
                     {metadatasUser.map((value, index) => {
                         return (
                             <div className="flex-shrink-0 px-6" key={'meta ' + index}>
