@@ -56,9 +56,9 @@ export function Experience() {
                                 </div>
                             </div>
 
-                            <div className="block lg:hidden border-t border-gray-700 my-6" />
+                            <div className="block md:hidden border-t border-gray-700 my-6" />
 
-                            <div className="flex border-gray-700 lg:border-l lg:pl-8">
+                            <div className="flex border-gray-700 md:border-l md:pl-8">
                                 <div className="grid grid-cols-1 gap-8">
                                     {enterprisesUser.map((value, index) => {
                                         const isLast = index === enterprisesUser.length - 1;
