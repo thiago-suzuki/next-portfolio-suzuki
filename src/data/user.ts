@@ -30,6 +30,7 @@ import ProjectOrbitImg from "@/assets/projects/orbit.png"
 import ProjectPowerBIImg from "@/assets/projects/power-bi.png"
 import ProjectImg from "@/assets/projects/project.png"
 import ProjectResumeCraftImg from "@/assets/projects/resume-craft.png"
+import ProjectTKSFinancialImg from "@/assets/projects/tks-financial.png"
 import ProjectTKSWeatherImg from "@/assets/projects/tks-weather.png"
 
 // Import Images Enterprises
@@ -104,6 +105,17 @@ export const technologiesUser: TechnologiesUser[] = [
 
 // Projects User
 export const projectsUser: ProjectsUser[] = [
+  {
+    title: "TKS Financial",
+    image: ProjectTKSFinancialImg,
+    description: {
+      "pt-br": "Site de Dashboard Financeiro",
+      es: "Sitio de Dashboard Financiero",
+      en: "Financial Dashboard Website"
+    },
+    deploy: "https://tks-financial.vercel.app",
+    source: "https://github.com/thiago-suzuki/tks-financial-dashboard"
+  },
   {
     title: "TKS Weather",
     image: ProjectTKSWeatherImg,

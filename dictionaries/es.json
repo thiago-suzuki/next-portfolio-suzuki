@@ -1,5 +1,9 @@
 {
   "Pages": {
+    "NotFound": {
+      "title": "¡Página no encontrada!",
+      "subtitle": "Esta página está faltando o escribiste el enlace incorrectamente."
+    },
     "Home": {
       "hello": "Hola, soy",
       "work": "Desarrollador Full Stack",
