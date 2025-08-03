@@ -8,7 +8,7 @@ export default function NotFound() {
 
   return (
     <motion.div 
-      className="md:mt-20 grid grid-rows-2 md:grid-cols-2"
+      className="mb-20 md:mt-20 md:mb-0 grid grid-rows-2 md:grid-cols-2"
       initial={{
         y: 20,
         opacity: 0,
