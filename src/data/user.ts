@@ -26,6 +26,7 @@ import ProjectConsultaCepImg from "@/assets/projects/consulta-cep.png"
 import ProjectCookAppImg from "@/assets/projects/cook-app.png"
 import ProjectEcommerceImg from "@/assets/projects/eccommerce.png"
 import ProjectFreelanceImg from "@/assets/projects/freelance.png"
+import ProjectMarketPlaceImg from "@/assets/projects/marketplace.png"
 import ProjectOrbitImg from "@/assets/projects/orbit.png"
 import ProjectPowerBIImg from "@/assets/projects/power-bi.png"
 import ProjectImg from "@/assets/projects/project.png"
@@ -203,6 +204,17 @@ export const projectsUser: ProjectsUser[] = [
     },
     deploy: "https://nlw-pocket-frontend.vercel.app/",
     source: "https://github.com/thiago-suzuki/nlw-pocket-frontend"
+  },
+  {
+    title: "MarketPlace",
+    image: ProjectMarketPlaceImg,
+    description: {
+      "pt-br": "Aplicação de Cadastro de Produtos feita durante o Desafio Angular na Prática da Rocketseat",
+      es: "Aplicación de Registro de Productos realizada durante el Desafío Angular en la Práctica de Rocketseat",
+      en: "Product Registration Application built during the Angular in Practice Challenge by Rocketseat"
+    },
+    deploy: null,
+    source: "https://github.com/thiago-suzuki/desafio-angular-pratica-rkt"
   },
   {
     title: "Cook App",
