@@ -107,6 +107,17 @@ export const technologiesUser: TechnologiesUser[] = [
 
 // Projects User
 export const projectsUser: ProjectsUser[] = [
+   {
+    title: "Player de Vídeos",
+    image: ProjectPlayerVideosImg,
+    description: {
+      "pt-br": "Aplicação de Player de Vídeos feita com integração do YouTube, utilizando Zustand e Redux",
+      es: "Aplicación de reproductor de videos creada con integración de YouTube, utilizando Zustand y Redux",
+      en: "Video Player application built with YouTube integration, using Zustand and Redux"
+    },
+    deploy: "https://player-musics-rdzs.vercel.app",
+    source: "https://github.com/thiago-suzuki/rock-react-redux-zustand"
+  },
   {
     title: "TKS Financial",
     image: ProjectTKSFinancialImg,
@@ -216,17 +227,6 @@ export const projectsUser: ProjectsUser[] = [
     },
     deploy: null,
     source: "https://github.com/thiago-suzuki/desafio-angular-pratica-rkt"
-  },
-  {
-    title: "Player de Vídeos",
-    image: ProjectPlayerVideosImg,
-    description: {
-      "pt-br": "Aplicação de Player de Vídeos feita com integração do YouTube, utilizando Zustand e Redux",
-      es: "Aplicación de reproductor de videos creada con integración de YouTube, utilizando Zustand y Redux",
-      en: "Video Player application built with YouTube integration, using Zustand and Redux"
-    },
-    deploy: null,
-    source: "https://github.com/thiago-suzuki/rock-react-redux-zustand"
   },
   {
     title: "Cook App",
