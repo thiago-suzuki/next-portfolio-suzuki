@@ -282,6 +282,19 @@ export const enterprisesUser: EnterprisesUser[] = [
     imageEnterprise: EnterpriseGBMImg,
     linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
     positions: [
+       {
+        namePosition: {
+          "pt-br": "Desenvolvedor Full Stack Pleno",
+          es: "Desarrollador Full Stack Medio",
+          en: "Mid-Level Full Stack Developer"
+        },
+        timeAtPosition: {
+          "pt-br": "Dez 2025 - O momento",
+          es: "Dez 2025 - Presente",
+          en: "Dez 2025 - Present"
+        },
+        actualPosition: true,
+      },
       {
         namePosition: {
           "pt-br": "Desenvolvedor Full Stack Júnior III",
@@ -289,11 +302,11 @@ export const enterprisesUser: EnterprisesUser[] = [
           en: "Junior Full Stack Developer III"
         },
         timeAtPosition: {
-          "pt-br": "Mar 2025 - O momento",
-          es: "Mar 2025 - Presente",
-          en: "Mar 2025 - Present"
+          "pt-br": "Mar 2025 - Dez 2025",
+          es: "Mar 2025 - Dez 2025",
+          en: "Mar 2025 - Dez 2025"
         },
-        actualPosition: true,
+        actualPosition: false,
       },
       {
         namePosition: {
