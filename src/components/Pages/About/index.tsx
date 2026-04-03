@@ -43,7 +43,7 @@ export function About() {
                             <div className="flex justify-center">
                                 <div className="w-full max-w-md bg-black rounded-lg overflow-hidden">
                                     <img
-                                        src="/images/about-profile.jpg"
+                                        src="/images/about-profile.png"
                                         alt="Professional portrait"
                                         className="w-full h-auto"
                                     />
