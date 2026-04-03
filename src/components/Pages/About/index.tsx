@@ -45,7 +45,7 @@ export function About() {
                                     <img
                                         src="/images/about-profile.png"
                                         alt="Professional portrait"
-                                        className="w-full h-auto"
+                                        className="w-[90%] h-auto"
                                     />
                                 </div>
                             </div>
