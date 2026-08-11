@@ -37,6 +37,7 @@ import ProjectTKSWeatherImg from "@/assets/projects/tks-weather.png"
 
 // Import Images Enterprises
 import EnterpriseGBMImg from "@/assets/enterprises/gbmtech_logo.jpeg"
+import EnterpriseKMMImg from "@/assets/enterprises/kmmbynstech_logo.jpeg"
 
 
 // Links User
@@ -278,9 +279,9 @@ export const projectsUser: ProjectsUser[] = [
 // Enterprises
 export const enterprisesUser: EnterprisesUser[] = [
   {
-    nameEnterprise: "GBM Tech & Control",
-    imageEnterprise: EnterpriseGBMImg,
-    linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
+    nameEnterprise: "KMM by Nstech",
+    imageEnterprise: EnterpriseKMMImg,
+    linkEnterprise: "https://www.linkedin.com/company/kmm-tns-inside/posts/?feedView=all",
     positions: [
        {
         namePosition: {
@@ -297,40 +298,34 @@ export const enterprisesUser: EnterprisesUser[] = [
       },
       {
         namePosition: {
-          "pt-br": "Desenvolvedor Full Stack Júnior III",
-          es: "Desarrollador Full Stack Junior III",
-          en: "Junior Full Stack Developer III"
+          "pt-br": "Desenvolvedor Full Stack Júnior",
+          es: "Desarrollador Full Stack Junior",
+          en: "Junior Full Stack Developer"
         },
         timeAtPosition: {
-          "pt-br": "Mar 2025 - Dez 2025",
-          es: "Mar 2025 - Dez 2025",
-          en: "Mar 2025 - Dez 2025"
+          "pt-br": "Ago 2025 - Dez 2025",
+          es: "Ago 2025 - Dez 2025",
+          en: "Aug 2025 - Dec 2025"
         },
         actualPosition: false,
-      },
+      }
+    ]
+  },
+  {
+    nameEnterprise: "GBM Tech & Control",
+    imageEnterprise: EnterpriseGBMImg,
+    linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
+    positions: [
       {
         namePosition: {
-          "pt-br": "Desenvolvedor Full Stack Júnior II",
-          es: "Desarrollador Full Stack Junior II",
-          en: "Junior Full Stack Developer II"
+          "pt-br": "Desenvolvedor Full Stack Júnior",
+          es: "Desarrollador Full Stack Junior",
+          en: "Junior Full Stack Developer"
         },
         timeAtPosition: {
-          "pt-br": "Jun 2024 - Mar 2025",
-          es: "Jun 2024 - Mar 2025",
-          en: "Jun 2024 - Mar 2025"
-        },
-        actualPosition: false,
-      },
-      {
-        namePosition: {
-          "pt-br": "Desenvolvedor Full Stack Júnior I",
-          es: "Desarrollador Full Stack Junior I",
-          en: "Junior Full Stack Developer I"
-        },
-        timeAtPosition: {
-          "pt-br": "Mar 2023 - Jun 2024",
-          es: "Mar 2023 - Jun 2024",
-          en: "Mar 2023 - Jun 2024"
+          "pt-br": "Mar 2023 - Ago 2025",
+          es: "Mar 2023 - Ago 2025",
+          en: "Mar 2023 - Aug 2025"
         },
         actualPosition: false,
       },
