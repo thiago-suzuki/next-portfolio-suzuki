@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { enterprisesUser, technologiesUser } from "@/data";
 import { calcularTempoEmpresa } from "@/utils/calcular-tempo-empresa";
+import { calcularTempoPosicao } from "@/utils/calcular-tempo-posicao";
 
 export function Experience() {
     const locale = useLocale();
@@ -108,7 +109,11 @@ export function Experience() {
                                                                             {value.namePosition[locale] || value.namePosition["pt-br"]}
                                                                         </strong>
                                                                         <div className="text-[14px] lg:text-[18px] text-gray-300">
-                                                                            {value.timeAtPosition[locale] || value.timeAtPosition["pt-br"]}
+                                                                            {value.timeAtPosition[locale] || value.timeAtPosition["pt-br"]} (
+                                                                                {calcularTempoPosicao(
+                                                                                    value.timeAtPosition[locale] || value.timeAtPosition["pt-br"],
+                                                                                    locale
+                                                                                )})
                                                                         </div>
                                                                     </div>
                                                                 </div>
