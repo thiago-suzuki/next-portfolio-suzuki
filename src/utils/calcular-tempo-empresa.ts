@@ -8,16 +8,46 @@ export function calcularTempoEmpresa(
 
   const meses: Record<string, Record<string, number>> = {
     "pt-br": {
-      Jan: 0, Fev: 1, Mar: 2, Abr: 3, Mai: 4, Jun: 5,
-      Jul: 6, Ago: 7, Set: 8, Out: 9, Nov: 10, Dez: 11,
+      Jan: 0,
+      Fev: 1,
+      Mar: 2,
+      Abr: 3,
+      Mai: 4,
+      Jun: 5,
+      Jul: 6,
+      Ago: 7,
+      Set: 8,
+      Out: 9,
+      Nov: 10,
+      Dez: 11,
     },
     es: {
-      Ene: 0, Feb: 1, Mar: 2, Abr: 3, May: 4, Jun: 5,
-      Jul: 6, Ago: 7, Sep: 8, Oct: 9, Nov: 10, Dic: 11,
+      Ene: 0,
+      Feb: 1,
+      Mar: 2,
+      Abr: 3,
+      May: 4,
+      Jun: 5,
+      Jul: 6,
+      Ago: 7,
+      Sep: 8,
+      Oct: 9,
+      Nov: 10,
+      Dic: 11,
     },
     en: {
-      Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
-      Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
+      Jan: 0,
+      Feb: 1,
+      Mar: 2,
+      Apr: 3,
+      May: 4,
+      Jun: 5,
+      Jul: 6,
+      Aug: 7,
+      Sep: 8,
+      Oct: 9,
+      Nov: 10,
+      Dec: 11,
     },
   };
 
@@ -31,15 +61,18 @@ export function calcularTempoEmpresa(
     );
   };
 
-  // Pega a posição mais antiga
+  // Posição mais antiga da empresa
   const ultimaPosicao = positions[positions.length - 1];
 
-  const periodoMaisAntigo = ultimaPosicao.timeAtPosition[locale];
+  const periodoMaisAntigo =
+    ultimaPosicao.timeAtPosition[locale] ||
+    ultimaPosicao.timeAtPosition["pt-br"];
+
   const [inicioMaisAntigo] = periodoMaisAntigo.split(" - ");
 
   const inicio = parseData(inicioMaisAntigo);
 
-  // Se existir cargo atual, considera hoje
+  // Verifica se ainda está trabalhando na empresa
   const possuiCargoAtual = positions.some(
     (position) => position.actualPosition
   );
@@ -49,57 +82,77 @@ export function calcularTempoEmpresa(
   if (possuiCargoAtual) {
     fim = new Date();
   } else {
-    // Caso não tenha posição atual, pega o fim da posição mais recente
-    const periodoMaisRecente = positions[0].timeAtPosition[locale];
+    const primeiraPosicao = positions[0];
+
+    const periodoMaisRecente =
+      primeiraPosicao.timeAtPosition[locale] ||
+      primeiraPosicao.timeAtPosition["pt-br"];
+
     const [, fimMaisRecente] = periodoMaisRecente.split(" - ");
 
     fim = parseData(fimMaisRecente);
   }
 
-  let totalMeses =
+  // +1 para contar o mês inicial também
+  const totalMeses =
     (fim.getFullYear() - inicio.getFullYear()) * 12 +
-    (fim.getMonth() - inicio.getMonth());
+    (fim.getMonth() - inicio.getMonth()) +
+    1;
 
   const anos = Math.floor(totalMeses / 12);
   const mesesRestantes = totalMeses % 12;
 
+  const resultado: string[] = [];
+
   if (locale === "en") {
-    const resultado = [];
-
-    if (anos > 0)
-      resultado.push(`${anos} ${anos === 1 ? "year" : "years"}`);
-
-    if (mesesRestantes > 0)
+    if (anos > 0) {
       resultado.push(
-        `${mesesRestantes} ${mesesRestantes === 1 ? "month" : "months"}`
+        `${anos} ${anos === 1 ? "year" : "years"}`
       );
+    }
+
+    if (mesesRestantes > 0) {
+      resultado.push(
+        `${mesesRestantes} ${
+          mesesRestantes === 1 ? "month" : "months"
+        }`
+      );
+    }
 
     return resultado.join(" ");
   }
 
   if (locale === "es") {
-    const resultado = [];
-
-    if (anos > 0)
-      resultado.push(`${anos} ${anos === 1 ? "año" : "años"}`);
-
-    if (mesesRestantes > 0)
+    if (anos > 0) {
       resultado.push(
-        `${mesesRestantes} ${mesesRestantes === 1 ? "mes" : "meses"}`
+        `${anos} ${anos === 1 ? "año" : "años"}`
       );
+    }
+
+    if (mesesRestantes > 0) {
+      resultado.push(
+        `${mesesRestantes} ${
+          mesesRestantes === 1 ? "mes" : "meses"
+        }`
+      );
+    }
 
     return resultado.join(" ");
   }
 
-  const resultado = [];
-
-  if (anos > 0)
-    resultado.push(`${anos} ${anos === 1 ? "ano" : "anos"}`);
-
-  if (mesesRestantes > 0)
+  if (anos > 0) {
     resultado.push(
-      `${mesesRestantes} ${mesesRestantes === 1 ? "mês" : "meses"}`
+      `${anos} ${anos === 1 ? "ano" : "anos"}`
     );
+  }
+
+  if (mesesRestantes > 0) {
+    resultado.push(
+      `${mesesRestantes} ${
+        mesesRestantes === 1 ? "mês" : "meses"
+      }`
+    );
+  }
 
   return resultado.join(" ");
 }
