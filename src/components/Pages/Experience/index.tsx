@@ -89,7 +89,7 @@ export function Experience() {
                                                         >
                                                             {value.nameEnterprise}
                                                         </a>
-                                                        <span>{calcularTempoEmpresa(value.positions, locale)}</span>
+                                                        <span> {value.location} - {calcularTempoEmpresa(value.positions, locale)}</span>
                                                     </div>
                                                 </div>
                                                 <div className="relative flex flex-col gap-7 p-8">

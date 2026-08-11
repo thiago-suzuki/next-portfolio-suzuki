@@ -280,6 +280,7 @@ export const projectsUser: ProjectsUser[] = [
 export const enterprisesUser: EnterprisesUser[] = [
   {
     nameEnterprise: "KMM by Nstech",
+    location: 'Ponta Grossa, Paraná',
     imageEnterprise: EnterpriseKMMImg,
     linkEnterprise: "https://www.linkedin.com/company/kmm-tns-inside/posts/?feedView=all",
     positions: [
@@ -313,6 +314,7 @@ export const enterprisesUser: EnterprisesUser[] = [
   },
   {
     nameEnterprise: "GBM Tech & Control",
+    location: 'Santos, São Paulo',
     imageEnterprise: EnterpriseGBMImg,
     linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
     positions: [

@@ -26,6 +26,7 @@ export type ProjectsUser = {
 
 export type EnterprisesUser = {
     nameEnterprise: string;
+    location: string;
     imageEnterprise: StaticImageData;
     linkEnterprise: string;
     positions: PositionsEnterpriseUser[];
