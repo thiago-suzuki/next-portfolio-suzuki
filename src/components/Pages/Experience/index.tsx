@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
 import { enterprisesUser, technologiesUser } from "@/data";
+import { calcularTempoEmpresa } from "@/utils/calcular-tempo-empresa";
 
 export function Experience() {
     const locale = useLocale();
@@ -87,6 +88,7 @@ export function Experience() {
                                                         >
                                                             {value.nameEnterprise}
                                                         </a>
+                                                        <span>{calcularTempoEmpresa(value.positions, locale)}</span>
                                                     </div>
                                                 </div>
                                                 <div className="relative flex flex-col gap-7 p-8">
