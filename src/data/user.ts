@@ -14,7 +14,6 @@ import SkillPostgreSQLImg from "@/assets/skills/postgresql.png"
 import SkillGitImg from "@/assets/skills/git.png"
 import SkillGradleImg from "@/assets/skills/gradle.png"
 import SkillAndroidStuidoImg from "@/assets/skills/android-studio.png"
-import SkillCSharpImg from "@/assets/skills/csharp.png"
 import SkillVercelImg from "@/assets/skills/vercel.png"
 
 
@@ -94,10 +93,6 @@ export const technologiesUser: TechnologiesUser[] = [
     {
         icon: SkillAndroidStuidoImg,
         description: "Android Studio"
-    },
-    {
-        icon: SkillCSharpImg,
-        description: "C#"
     },
     {
         icon: SkillVercelImg,
