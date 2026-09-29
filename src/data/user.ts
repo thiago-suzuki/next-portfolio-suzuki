@@ -15,6 +15,10 @@ import SkillGitImg from "@/assets/skills/git.png"
 import SkillGradleImg from "@/assets/skills/gradle.png"
 import SkillAndroidStuidoImg from "@/assets/skills/android-studio.png"
 import SkillVercelImg from "@/assets/skills/vercel.png"
+import SkillClaudeImg from "@/assets/skills/claude.png"
+import SkillChatGPTImg from "@/assets/skills/chatgpt.png"
+import SkillCopilotImg from "@/assets/skills/copilot.png"
+import SkillCursorImg from "@/assets/skills/cursor.jpeg"
 
 
 // Import Images Projects
@@ -37,6 +41,7 @@ import ProjectTKSWeatherImg from "@/assets/projects/tks-weather.png"
 // Import Images Enterprises
 import EnterpriseGBMImg from "@/assets/enterprises/gbmtech_logo.jpeg"
 import EnterpriseKMMImg from "@/assets/enterprises/kmmbynstech_logo.jpeg"
+import EnterpriseNstechImg from "@/assets/enterprises/nstech-logo.png"
 
 
 // Links User
@@ -97,6 +102,22 @@ export const technologiesUser: TechnologiesUser[] = [
     {
         icon: SkillVercelImg,
         description: "Vercel"
+    },
+    {
+        icon: SkillClaudeImg,
+        description: "Claude Code"
+    },
+    {
+        icon: SkillChatGPTImg,
+        description: "ChatGPT"
+    },
+    {
+        icon: SkillCopilotImg,
+        description: "Copilot"
+    },
+    {
+        icon: SkillCursorImg,
+        description: "Cursor AI"
     }
 ]
 
@@ -274,8 +295,29 @@ export const projectsUser: ProjectsUser[] = [
 // Enterprises
 export const enterprisesUser: EnterprisesUser[] = [
   {
+    nameEnterprise: "Nstech",
+    location: 'São Paulo, SP',
+    imageEnterprise: EnterpriseNstechImg,
+    linkEnterprise: "https://www.linkedin.com/company/nstechlog/posts/?feedView=all",
+    positions: [
+      {
+        namePosition: {
+          "pt-br": "Desenvolvedor Full Stack Pleno",
+          es: "Desarrollador Full Stack Medio",
+          en: "Mid-Level Full Stack Developer"
+        },
+        timeAtPosition: {
+          "pt-br": "Dez 2025 - O momento",
+          es: "Dez 2025 - Presente",
+          en: "Dez 2025 - Present"
+        },
+        actualPosition: true,
+      }
+    ]
+  },
+  {
     nameEnterprise: "KMM by Nstech",
-    location: 'Ponta Grossa, Paraná',
+    location: 'Ponta Grossa, PR',
     imageEnterprise: EnterpriseKMMImg,
     linkEnterprise: "https://www.linkedin.com/company/kmm-tns-inside/posts/?feedView=all",
     positions: [
@@ -286,9 +328,9 @@ export const enterprisesUser: EnterprisesUser[] = [
           en: "Mid-Level Full Stack Developer"
         },
         timeAtPosition: {
-          "pt-br": "Dez 2025 - O momento",
-          es: "Dez 2025 - Presente",
-          en: "Dez 2025 - Present"
+          "pt-br": "Dez 2025 - Set 2026",
+          es: "Dez 2025 - Set 2026",
+          en: "Dez 2025 - Sep 2026"
         },
         actualPosition: true,
       },
@@ -309,7 +351,7 @@ export const enterprisesUser: EnterprisesUser[] = [
   },
   {
     nameEnterprise: "GBM Tech & Control",
-    location: 'Santos, São Paulo',
+    location: 'Santos, SP',
     imageEnterprise: EnterpriseGBMImg,
     linkEnterprise: "https://www.linkedin.com/company/gbmtech/posts/?feedView=all",
     positions: [
