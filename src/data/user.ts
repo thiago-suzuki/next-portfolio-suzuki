@@ -307,9 +307,9 @@ export const enterprisesUser: EnterprisesUser[] = [
           en: "Mid-Level Full Stack Developer"
         },
         timeAtPosition: {
-          "pt-br": "Dez 2025 - O momento",
-          es: "Dez 2025 - Presente",
-          en: "Dez 2025 - Present"
+          "pt-br": "Set 2025 - O momento",
+          es: "Set 2025 - Presente",
+          en: "Sep 2025 - Present"
         },
         actualPosition: true,
       }
