@@ -278,17 +278,6 @@ export const projectsUser: ProjectsUser[] = [
     deploy: null,
     source: "https://github.com/thiago-suzuki/Dashboards-PowerBI-2023"
   },
-  {
-    title: "C# API - Rocketseat",
-    image: ProjectImg,
-    description: {
-      "pt-br": "API C# para upload de fotos no Google Drive feito durante o evento C# na Prática da Rocketseat",
-      es: "API en C# para subir fotos a Google Drive desarrollada durante el evento C# en la Práctica de Rocketseat",
-      en: "C# API for uploading photos to Google Drive developed during Rocketseat's C# in Practice event"
-    },
-    deploy: null,
-    source: "https://github.com/thiago-suzuki/CsharpPraticaRocketseat"
-  },
 ]
 
 
